@@ -1,0 +1,2 @@
+CH_[nombre_personaje]		---		Character/Personaje
+SC_[nombre_escenario]		---		Scenary/Elemento para el escenario
