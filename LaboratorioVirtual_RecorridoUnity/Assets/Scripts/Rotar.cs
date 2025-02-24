@@ -11,23 +11,27 @@ public class Rotar : MonoBehaviour
     public TMP_Text texto;
     private string urlGetScore = "http://localhost/LaboratorioVirtual/LaboratorioVirtual_pagina/api/get_score.php";
     private string urlUpdateScore = "http://localhost/LaboratorioVirtual/LaboratorioVirtual_pagina/api/update_score.php";
-    bool primerGiro;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         StartCoroutine(ObtenerScore());
         movimiento = new Vector3(0, 0, 10);
-        primerGiro = true;
     }
 
     void Update()
     {
-        
+            texto.text = contador.ToString();
+
 
         //if (contador == -1) return; // No hacer nada hasta que se obtenga el score real
+        try
+        {
+            StartCoroutine(ObtenerScore());
 
-        if (Input.GetMouseButtonDown(0))
+
+            if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Click del mouse");
             contador++;
@@ -35,28 +39,35 @@ public class Rotar : MonoBehaviour
             rb.AddTorque(movimiento);
 
             // Actualizar el score en la base de datos solo si cambia
+            StartCoroutine(ActualizarScore(contador));
         }
 
+          
+                
+            
 
-            StartCoroutine(ActualizarScore(contador));
 
-        texto.text = contador.ToString();
-
-        if (primerGiro)
+        if (Input.GetMouseButtonDown(1))
         {
+            Debug.Log("Click derecho");
+ 
 
-            contador++;
-            StartCoroutine(ActualizarScore(contador));
-            contador--;
-            StartCoroutine(ActualizarScore(contador));
             rb.AddTorque(movimiento);
-            int giro = contador;
-            for (int i = 0; i < giro; i++)
+            
+            for (int i = 0; i < contador; i++)
             {
                 rb.AddTorque(movimiento);
+                texto.text = "BOOM!";
             }
-            primerGiro = false;
+            
         }
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e);
+            throw;
+        }
+
     }
 
     IEnumerator ObtenerScore()
@@ -71,6 +82,7 @@ public class Rotar : MonoBehaviour
                 ScoreData data = JsonUtility.FromJson<ScoreData>(json);
                 contador = data.score; // Ahora sí se usa el score real
                 texto.text = contador.ToString();
+
             }
             else
             {
