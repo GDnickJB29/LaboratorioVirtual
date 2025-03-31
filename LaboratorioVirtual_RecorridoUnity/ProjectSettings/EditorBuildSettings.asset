@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/prueba1.unity
-    guid: ac4e536f8f148ed449d80aa0010d955a
+    path: Assets/Aulas/EdificioR2/Escenas/R2_Principal.unity
+    guid: b6602d8a69aee064a9bdacb14b3f48c2
+  - enabled: 1
+    path: Assets/Aulas/Aula_R2-1/Escenas/Aula_R2-1_lv-1(Electronica).unity
+    guid: 2f4b9159e1e4cd540a0c4216fdb1ab9c
+  - enabled: 1
+    path: Assets/Aulas/Aula_R2-1/Escenas/Aula_R2-1_lv-2(Electronica).unity
+    guid: c9ce7ad478be1e940b67f1ad05bb2aa9
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 763b35b60754bd7409eb5d68d7bb4706, type: 3}
   m_UseUCBPForAssetBundles: 0

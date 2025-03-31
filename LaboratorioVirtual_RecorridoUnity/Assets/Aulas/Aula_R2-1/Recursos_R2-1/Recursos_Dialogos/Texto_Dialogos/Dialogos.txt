@@ -1,0 +1,69 @@
+Marcadores (lo que se ilumina para hacerle referencia):
+
+        Ninguno
+        Bateria
+        Led
+        Potenciometro
+        Todo
+        Amperaje
+        Oms
+        Voltaje
+
+
+Dialogo Tutorial ----------
+
+¡Hola y bienvenido al Laboratorio Virtual de Electrónica! Para continuar, usando el mouse presiona el Botón continuar.
+M: Ninguno
+
+¡Genial! En esta práctica, vamos a aprender sobre la Ley de Ohm.
+Esta ley relaciona tres conceptos muy importantes en un circuito eléctrico: Voltaje, Amperaje y Resistencia.
+M: Ninguno
+
+Mira, en el circuito de ejemplo tenemos tres componentes. Este es el Led.
+El Led se ilumina dependiendo del Amperaje que pasa por él.
+M: Led
+
+Aquí tenemos la Batería.
+Esta proporciona el Voltaje necesario para hacer funcionar el circuito.
+M: Bateria
+
+El Voltaje es la diferencia de energía que empuja a los electrones a través del circuito.
+M: Voltaje
+
+Y por último, tenemos el Potenciómetro.
+Este componente se utiliza para ajustar la Resistencia en el circuito.
+Cuando giras el Potenciómetro, la Resistencia cambia, lo que afecta el Amperaje que pasa por el Led.
+M: Potenciometro
+
+Si deseas ajustar el Potenciómetro, mantén presionado el clic izquierdo y gira la ruedita del ratón.
+Verás cómo la Resistencia cambia en tiempo real y el Led brillará más o menos dependiendo de la cantidad de Amperaje.
+M: Potenciometro
+
+Observa cómo los valores en la fórmula de la Ley de Ohm se actualizan.
+La fórmula es: V = A x R, donde V es el Voltaje, A es el Amperaje y R es la Resistencia.
+M: Oms
+
+Al cambiar la Resistencia con el Potenciómetro, también verás cómo varía el Amperaje que pasa por el Led.
+Si aumentas la Resistencia, el Amperaje disminuirá, y el Led se apagará un poco.
+Si reduces la Resistencia, el Amperaje aumentará, y el Led brillará más.
+M: Amperaje
+
+¡Experimenta con los diferentes valores y observa cómo cambian los valores!
+M: Todo
+
+¡Perfecto! Ahora que sabes cómo interactuar con los componentes, puedes comenzar a experimentar.
+¡Diviértete y aprende cómo los cambios en la Resistencia, el Voltaje y el Amperaje afectan al circuito!
+M: Ninguno
+
+
+
+Dialogo de Salida-------------------
+
+¿Como?, ¿ya te vaz?
+¡Gracias por participar en el Laboratorio Virtual de Electrónica!
+Espero que hayas aprendido mucho sobre la Ley de Ohm y cómo los diferentes componentes interactúan en el circuito.
+M: Ninguno
+
+¡No dudes en volver a experimentar y seguir aprendiendo!
+¡Hasta la próxima lección!
+M: Ninguno
